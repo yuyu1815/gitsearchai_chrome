@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitSearchAI</title>
+    <link rel="stylesheet" href="../styles/sidepanel.css">
+</head>
+<body>
+    <div class="sidepanel-container">
+        <header class="sidepanel-header">
+            <h1 class="sidepanel-title">GitSearchAI</h1>
+        </header>
+
+        <main class="sidepanel-main">
+            <div class="search-section">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search repositories..."
+                >
+                <button id="searchButton" class="search-button">
+                    Search
+                </button>
+            </div>
+
+            <div class="results-section" id="resultsSection">
+                <!-- 検索結果がここに表示される -->
+            </div>
+
+            <div class="loading-section" id="loadingSection" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>Searching...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="../scripts/sidepanel.js"></script>
+</body>
+</html>

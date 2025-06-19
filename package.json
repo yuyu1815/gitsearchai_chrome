@@ -1,0 +1,39 @@
+{
+  "name": "gitsearchai_chrome",
+  "version": "1.0.0",
+  "description": "Chrome extension for Git search AI functionality",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "dev:chrome": "webextension-toolbox dev chrome",
+    "dev:firefox": "webextension-toolbox dev firefox",
+    "dev:edge": "webextension-toolbox dev edge",
+    "dev:safari": "webextension-toolbox dev safari",
+    "build": "webextension-toolbox build",
+    "build:chrome": "webextension-toolbox build chrome",
+    "build:firefox": "webextension-toolbox build firefox",
+    "build:edge": "webextension-toolbox build edge",
+    "build:safari": "webextension-toolbox build safari",
+    "test": "jest",
+    "test:e2e": "jest --config jest.e2e.config.js"
+  },
+  "keywords": [
+    "chrome-extension",
+    "webextension",
+    "git",
+    "search",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@webextension-toolbox/webextension-toolbox": "^6.0.0",
+    "@types/chrome": "^0.0.246",
+    "typescript": "^5.0.0",
+    "ts-loader": "^9.4.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  },
+  "dependencies": {}
+}

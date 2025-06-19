@@ -1,0 +1,26 @@
+{
+  "extensionName": {
+    "message": "GitSearchAI Chrome Extension",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "AI-powered Git search functionality for enhanced code discovery",
+    "description": "Description of the extension"
+  },
+  "popupTitle": {
+    "message": "GitSearchAI",
+    "description": "Title displayed in popup"
+  },
+  "searchPlaceholder": {
+    "message": "Search repositories...",
+    "description": "Placeholder text for search input"
+  },
+  "searchButton": {
+    "message": "Search",
+    "description": "Text for search button"
+  },
+  "errorMessage": {
+    "message": "An error occurred. Please try again.",
+    "description": "Generic error message"
+  }
+}

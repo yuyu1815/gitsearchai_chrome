@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "GitSearchAI Chrome Extension",
+  "version": "1.0.0",
+  "description": "AI-powered Git search functionality for enhanced code discovery",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "https://github.com/*",
+    "https://gitlab.com/*",
+    "https://www.gitsearchai.com/*",
+    "https://gitsearch-analytics-backend-0be9d52ca264.herokuapp.com/*"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*",
+        "https://gitlab.com/*",
+        "https://www.gitsearchai.com/*"
+      ],
+      "js": ["scripts/contentscript.js"],
+      "css": ["styles/content.css"]
+    }
+  ],
+  "action": {
+    "default_title": "GitSearchAI",
+    "default_icon": {
+      "16": "images/icon.png",
+      "48": "images/icon.png",
+      "128": "images/icon.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "pages/sidepanel.html"
+  },
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "default_locale": "en"
+}

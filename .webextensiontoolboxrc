@@ -1,0 +1,9 @@
+{
+  "verbose": false,
+  "autoReload": true,
+  "copyIgnore": [
+    "**/*.md",
+    "**/node_modules/**",
+    "**/tests/**"
+  ]
+}
