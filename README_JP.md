@@ -15,6 +15,22 @@ GitSearchAI.comウェブサイトを拡張し、追加のリポジトリ分析�
 - **📄 GitIngest**: リポジトリコンテンツ処理のためのGitIngest.comへの素早いアクセス
 - **📚 DeepWiki**: リポジトリドキュメント分析のためのDeepWiki.comとの統合
 
+<p>
+   <img src="./image/image1.png" alt="" width="450">
+   <img src="./image/image2.png" alt="" width="450">
+</p>
+
+## 使い方
+
+### 拡張機能アイコンをクリック
+
+![](./image/tutorial.gif)
+
+### GitHubの下部にあるAI検索ボタンをクリック
+
+![](./image/tutorial2.gif)
+
+
 ## 📦 インストール
 
 ### Chrome Web Storeから

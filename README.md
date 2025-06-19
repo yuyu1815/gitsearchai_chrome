@@ -16,9 +16,11 @@ A Chrome extension that enhances the GitSearchAI.com website by adding convenien
 - **📚 DeepWiki**: Integration with DeepWiki.com for repository documentation analysis
 
 <p>
-   <img src="./image/image1.png" alt="">
-   <img src="./image/image2.png" alt="">
+   <img src="./image/image1.png" alt="" width="450">
+   <img src="./image/image2.png" alt="" width="450">
 </p>
+
+![Tutorial: Click the extension icon](./image/tutorial.gif)
 
 ## 📦 Installation
 
