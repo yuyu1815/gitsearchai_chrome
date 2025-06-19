@@ -16,11 +16,19 @@ A Chrome extension that enhances the GitSearchAI.com website by adding convenien
 - **📚 DeepWiki**: Integration with DeepWiki.com for repository documentation analysis
 
 <p>
-   <img src="./image/image1.png" alt="" width="450">
-   <img src="./image/image2.png" alt="" width="450">
+   <img src="./image/image1.png" alt="" width="400">
+   <img src="./image/image2.png" alt="" width="400">
 </p>
 
-![Tutorial: Click the extension icon](./image/tutorial.gif)
+## How to Use
+
+### Click the Extension Icon
+
+![](./image/tutorial.gif)
+
+### Click the AI Search Button at the Bottom of GitHub
+
+![](./image/tutorial2.gif)
 
 ## 📦 Installation
 
