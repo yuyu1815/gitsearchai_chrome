@@ -15,6 +15,11 @@ A Chrome extension that enhances the GitSearchAI.com website by adding convenien
 - **📄 GitIngest**: Quick access to GitIngest.com for repository content processing
 - **📚 DeepWiki**: Integration with DeepWiki.com for repository documentation analysis
 
+<p>
+   <img src="./image/image1.png" alt="">
+   <img src="./image/image2.png" alt="">
+</p>
+
 ## 📦 Installation
 
 ### From Chrome Web Store
