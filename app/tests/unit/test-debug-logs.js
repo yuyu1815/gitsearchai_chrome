@@ -7,7 +7,7 @@ const path = require('path');
 // 1. ソースファイルでのデバッグログ確認
 console.log('1. ソースファイルでのデバッグログ確認');
 try {
-  const backgroundPath = path.join(__dirname, 'app', 'scripts', 'background.ts');
+  const backgroundPath = path.join(__dirname, '..', '..', 'scripts', 'background.ts');
   const background = fs.readFileSync(backgroundPath, 'utf8');
   
   console.log('✓ メッセージ受信デバッグログ:', background.includes('[DEBUG] Received message type:') ? 'あり' : 'なし');
@@ -19,7 +19,7 @@ try {
 }
 
 try {
-  const contentscriptPath = path.join(__dirname, 'app', 'scripts', 'contentscript.ts');
+  const contentscriptPath = path.join(__dirname, '..', '..', 'scripts', 'contentscript.ts');
   const contentscript = fs.readFileSync(contentscriptPath, 'utf8');
   
   console.log('✓ メッセージ送信デバッグログ:', contentscript.includes('[DEBUG] Sending TOGGLE_SIDE_PANEL message') ? 'あり' : 'なし');
@@ -32,7 +32,7 @@ try {
 // 2. ビルド後ファイルでのデバッグログ確認
 console.log('\n2. ビルド後ファイルでのデバッグログ確認');
 try {
-  const builtBackgroundPath = path.join(__dirname, 'dist', 'chrome', 'scripts', 'background.js');
+  const builtBackgroundPath = path.join(__dirname, '..', '..', '..', 'dist', 'chrome', 'scripts', 'background.js');
   const builtBackground = fs.readFileSync(builtBackgroundPath, 'utf8');
   
   // デバッグログの存在確認（圧縮されたファイル内）
@@ -46,7 +46,7 @@ try {
 }
 
 try {
-  const builtContentscriptPath = path.join(__dirname, 'dist', 'chrome', 'scripts', 'contentscript.js');
+  const builtContentscriptPath = path.join(__dirname, '..', '..', '..', 'dist', 'chrome', 'scripts', 'contentscript.js');
   const builtContentscript = fs.readFileSync(builtContentscriptPath, 'utf8');
   
   // デバッグログの存在確認
@@ -62,7 +62,7 @@ try {
 // 3. エラーハンドリングとデバッグログの統合確認
 console.log('\n3. エラーハンドリングとデバッグログの統合確認');
 try {
-  const backgroundPath = path.join(__dirname, 'app', 'scripts', 'background.ts');
+  const backgroundPath = path.join(__dirname, '..', '..', 'scripts', 'background.ts');
   const background = fs.readFileSync(backgroundPath, 'utf8');
   
   // メッセージハンドラー内のデバッグログとエラーハンドリングの確認

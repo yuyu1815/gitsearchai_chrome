@@ -7,7 +7,7 @@ const path = require('path');
 // 1. contentscript.tsのエラーハンドリング確認
 console.log('1. contentscript.tsエラーハンドリング確認');
 try {
-  const contentscriptPath = path.join(__dirname, 'app', 'scripts', 'contentscript.ts');
+  const contentscriptPath = path.join(__dirname, '..', '..', 'scripts', 'contentscript.ts');
   const contentscript = fs.readFileSync(contentscriptPath, 'utf8');
   
   console.log('✓ Extension context チェック:', contentscript.includes('chrome.runtime?.id') ? 'あり' : 'なし');
@@ -22,7 +22,7 @@ try {
 // 2. background.tsのエラーハンドリング確認
 console.log('\n2. background.tsエラーハンドリング確認');
 try {
-  const backgroundPath = path.join(__dirname, 'app', 'scripts', 'background.ts');
+  const backgroundPath = path.join(__dirname, '..', '..', 'scripts', 'background.ts');
   const background = fs.readFileSync(backgroundPath, 'utf8');
   
   console.log('✓ メッセージ検証:', background.includes('if (!message || typeof message !== \'object\')') ? 'あり' : 'なし');
@@ -37,7 +37,7 @@ try {
 // 3. ビルド後のファイル確認
 console.log('\n3. ビルド後ファイルのエラーハンドリング確認');
 try {
-  const builtContentscriptPath = path.join(__dirname, 'dist', 'chrome', 'scripts', 'contentscript.js');
+  const builtContentscriptPath = path.join(__dirname, '..', '..', '..', 'dist', 'chrome', 'scripts', 'contentscript.js');
   const builtContentscript = fs.readFileSync(builtContentscriptPath, 'utf8');
   
   console.log('✓ Extension context チェック（ビルド後）:', builtContentscript.includes('runtime') && builtContentscript.includes('id') ? 'あり' : 'なし');
@@ -47,7 +47,7 @@ try {
 }
 
 try {
-  const builtBackgroundPath = path.join(__dirname, 'dist', 'chrome', 'scripts', 'background.js');
+  const builtBackgroundPath = path.join(__dirname, '..', '..', '..', 'dist', 'chrome', 'scripts', 'background.js');
   const builtBackground = fs.readFileSync(builtBackgroundPath, 'utf8');
   
   console.log('✓ メッセージ検証（ビルド後）:', builtBackground.includes('object') ? 'あり' : 'なし');

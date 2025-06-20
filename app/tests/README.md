@@ -5,8 +5,16 @@ Chrome拡張機能の品質保証のためのテストスイートを管理し�
 
 ## 主要ファイル
 - `unit/`: 単体テストファイル
+  - `test-debug-logs.js`: デバッグログ機能の実装確認テスト
+  - `test-error-handling.js`: エラーハンドリング機能の実装確認テスト
+  - `test-toggle-message.js`: TOGGLE_SIDE_PANELメッセージ処理の詳細テスト
 - `integration/`: 統合テストファイル
-- `e2e/`: エンドツーエンドテストファイル
+  - `test-api-direct.js`: 外部API直接呼び出しテスト
+  - `test-cors-fix.js`: CORS問題修正確認テスト
+  - `test-extension-search.js`: Chrome拡張機能検索機能統合テスト
+  - `test-sidepanel-functionality.js`: サイドパネル機能統合テスト
+  - `test-toggle-functionality.js`: サイドパネルトグル機能統合テスト
+- `e2e/`: エンドツーエンドテストファイル（将来実装予定）
 
 ## 使用方法
 ```bash

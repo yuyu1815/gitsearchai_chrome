@@ -7,7 +7,7 @@ const path = require('path');
 // 1. ソースファイルでのTOGGLE_SIDE_PANEL確認
 console.log('1. ソースファイルでのTOGGLE_SIDE_PANEL確認');
 try {
-  const backgroundPath = path.join(__dirname, 'app', 'scripts', 'background.ts');
+  const backgroundPath = path.join(__dirname, '..', '..', 'scripts', 'background.ts');
   const background = fs.readFileSync(backgroundPath, 'utf8');
   
   // TOGGLE_SIDE_PANELケースの存在確認
@@ -29,7 +29,7 @@ try {
 // 2. contentscript.tsでのメッセージ送信確認
 console.log('\n2. contentscript.tsでのメッセージ送信確認');
 try {
-  const contentscriptPath = path.join(__dirname, 'app', 'scripts', 'contentscript.ts');
+  const contentscriptPath = path.join(__dirname, '..', '..', 'scripts', 'contentscript.ts');
   const contentscript = fs.readFileSync(contentscriptPath, 'utf8');
   
   // TOGGLE_SIDE_PANELメッセージ送信の確認
@@ -47,7 +47,7 @@ try {
 // 3. ビルド後ファイルでの確認
 console.log('\n3. ビルド後ファイルでの確認');
 try {
-  const builtBackgroundPath = path.join(__dirname, 'dist', 'chrome', 'scripts', 'background.js');
+  const builtBackgroundPath = path.join(__dirname, '..', '..', '..', 'dist', 'chrome', 'scripts', 'background.js');
   const builtBackground = fs.readFileSync(builtBackgroundPath, 'utf8');
   
   // TOGGLE_SIDE_PANELの存在確認（圧縮されたファイル内）
@@ -65,7 +65,7 @@ try {
 }
 
 try {
-  const builtContentscriptPath = path.join(__dirname, 'dist', 'chrome', 'scripts', 'contentscript.js');
+  const builtContentscriptPath = path.join(__dirname, '..', '..', '..', 'dist', 'chrome', 'scripts', 'contentscript.js');
   const builtContentscript = fs.readFileSync(builtContentscriptPath, 'utf8');
   
   // TOGGLE_SIDE_PANELメッセージ送信の確認
@@ -79,7 +79,7 @@ try {
 // 4. メッセージハンドラーの詳細確認
 console.log('\n4. メッセージハンドラーの詳細確認');
 try {
-  const backgroundPath = path.join(__dirname, 'app', 'scripts', 'background.ts');
+  const backgroundPath = path.join(__dirname, '..', '..', 'scripts', 'background.ts');
   const background = fs.readFileSync(backgroundPath, 'utf8');
   
   // メッセージハンドラー関数の抽出

@@ -69,7 +69,7 @@ async function testExtensionSearch() {
   
   try {
     // 動的にモジュールをインポート（ES6モジュールをCommonJSで使用）
-    const { gitHubSearchApi } = await import('./app/scripts/modules/data/search-api.js');
+    const { gitHubSearchApi } = await import('../../scripts/modules/data/search-api.js');
     
     console.log('✅ Search API module loaded successfully');
     

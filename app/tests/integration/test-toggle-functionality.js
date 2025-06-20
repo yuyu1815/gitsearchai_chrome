@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 try {
-  const manifestPath = path.join(__dirname, 'dist', 'chrome', 'manifest.json');
+  const manifestPath = path.join(__dirname, '..', '..', '..', 'dist', 'chrome', 'manifest.json');
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
   
   console.log('✓ sidePanel権限:', manifest.permissions.includes('sidePanel'));
@@ -20,7 +20,7 @@ try {
 // 2. contentscript.jsのトグル機能確認
 console.log('\n2. contentscript.jsトグル機能確認');
 try {
-  const contentscriptPath = path.join(__dirname, 'dist', 'chrome', 'scripts', 'contentscript.js');
+  const contentscriptPath = path.join(__dirname, '..', '..', '..', 'dist', 'chrome', 'scripts', 'contentscript.js');
   const contentscript = fs.readFileSync(contentscriptPath, 'utf8');
   
   console.log('✓ TOGGLE_SIDE_PANELメッセージ:', contentscript.includes('TOGGLE_SIDE_PANEL') ? 'あり' : 'なし');
@@ -34,7 +34,7 @@ try {
 // 3. background.jsのトグル処理確認
 console.log('\n3. background.jsトグル処理確認');
 try {
-  const backgroundPath = path.join(__dirname, 'dist', 'chrome', 'scripts', 'background.js');
+  const backgroundPath = path.join(__dirname, '..', '..', '..', 'dist', 'chrome', 'scripts', 'background.js');
   const background = fs.readFileSync(backgroundPath, 'utf8');
   
   console.log('✓ TOGGLE_SIDE_PANELハンドラー:', background.includes('TOGGLE_SIDE_PANEL') ? 'あり' : 'なし');
@@ -49,11 +49,11 @@ try {
 // 4. 必要なファイルの存在確認
 console.log('\n4. 必要ファイル存在確認');
 const requiredFiles = [
-  'dist/chrome/pages/sidepanel.html',
-  'dist/chrome/scripts/sidepanel.js',
-  'dist/chrome/scripts/background.js',
-  'dist/chrome/scripts/contentscript.js',
-  'dist/chrome/styles/content.css'
+  '../../../dist/chrome/pages/sidepanel.html',
+  '../../../dist/chrome/scripts/sidepanel.js',
+  '../../../dist/chrome/scripts/background.js',
+  '../../../dist/chrome/scripts/contentscript.js',
+  '../../../dist/chrome/styles/content.css'
 ];
 
 requiredFiles.forEach(file => {
