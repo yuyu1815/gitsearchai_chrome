@@ -39,7 +39,7 @@ GitSearchAI.comウェブサイトを拡張し、追加のリポジトリ分析�
 ### 手動インストール（開発用）
 1. このリポジトリをクローンします：
    ```bash
-   git clone https://github.com/your-username/gitsearchai_chrome.git
+   git clone https://github.com/yuyu1815/gitsearchai_chrome.git
    cd gitsearchai_chrome
    ```
 
