@@ -38,7 +38,7 @@ A Chrome extension that enhances the GitSearchAI.com website by adding convenien
 ### Manual Installation (Development)
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/gitsearchai_chrome.git
+   git clone https://github.com/yuyu1815/gitsearchai_chrome.git
    cd gitsearchai_chrome
    ```
 
