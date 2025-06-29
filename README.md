@@ -65,6 +65,12 @@ A Chrome extension that enhances the GitSearchAI.com website by adding convenien
 
 ## 🛠️ Development
 
+### Recent Updates
+#### CORS Issue Fix (v1.0.1)
+- Added host permission for `https://gitsearch-backend-werv.onrender.com/*` to resolve CORS policy errors
+- This allows the extension to make API requests to the backend server without being blocked by the browser's security policy
+- If you're experiencing CORS errors, please update to the latest version or rebuild the extension
+
 ### Prerequisites
 - Node.js (v16 or higher)
 - npm or yarn
@@ -289,6 +295,3 @@ For support, feature requests, or bug reports:
 ---
 
 **Made with ❤️ for developers who love efficient code discovery**
-
-
-

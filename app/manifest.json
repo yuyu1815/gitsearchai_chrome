@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "GitSearchAI Chrome Extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI-powered Git search functionality for enhanced code discovery",
   "permissions": [
     "storage",
@@ -14,7 +14,7 @@
     "https://github.com/*",
     "https://gitlab.com/*",
     "https://www.gitsearchai.com/*",
-    "https://gitsearch-analytics-backend-0be9d52ca264.herokuapp.com/*"
+    "https://gitsearch-backend-werv.onrender.com/*"
   ],
   "background": {
     "service_worker": "scripts/background.js"
