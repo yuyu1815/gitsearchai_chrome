@@ -5,7 +5,7 @@
 
 // API エンドポイント設定
 export const API_ENDPOINTS = {
-  SEARCH: 'https://gitsearch-analytics-backend-0be9d52ca264.herokuapp.com/api/search',
+  SEARCH: 'https://gitsearch-backend-werv.onrender.com/api/search',
   REPOSITORIES: 'https://api.gitsearchai.com/v1/repositories',
   USER_PROFILE: 'https://api.gitsearchai.com/v1/user',
   ANALYTICS: 'https://api.gitsearchai.com/v1/analytics'
